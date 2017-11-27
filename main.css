@@ -1,0 +1,46 @@
+
+#price-table {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+#price-table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#price-table tr:nth-child(even) {
+  background: #eee
+}
+
+#price-table tbody tr:hover {
+  background: lightblue
+}
+
+#price-table thead {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+}
+
+#price-table .result-row,
+#price-table #result-table {
+  text-align: center
+}
+
+#price-table tr#sum {
+  font-weight: bold;
+  color: #c00;
+}
+
+#price-table #sort-by-sum:hover {
+  text-decoration: underline;
+  cursor: pointer
+}
+
+#sort-by-sum i.asc:before {
+  content: "V"
+}
+#sort-by-sum i.desc:before {
+  content: "^"
+}

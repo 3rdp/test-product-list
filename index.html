@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Junior Task</title>
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+    <table id="price-table">
+      <thead>
+        <tr>
+        <td>Название товара</td>
+        <td>Количество</td>
+        <td>Стоимость 1 ед.</td>
+        <td id="sort-by-sum">Общая стоимость<i class="flag"></i></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="input-row">
+          <td>
+            Красный носок
+          </td>
+          <td><input class="quantity" type="text" value="1"></td>
+          <td><input class="price" type="text" value="3.2"></td>
+          <td class="result-row"></td>
+        </tr>
+        <tr class="input-row">
+          <td>Синий носок</td>
+          <td><input class="quantity" type="text" value="2"></td>
+          <td><input class="price" type="text" value="4.22"></td>
+          <td class="result-row"></td>
+        </tr>
+        <tr class="input-row">
+          <td>Бесцветный носок</td>
+          <td><input class="quantity" type="text" value="0"></td>
+          <td><input class="price" type="text" value="55"></td>
+          <td class="result-row"></td>
+        </tr>
+        <tr id="sum">
+          <td colspan="3">
+            Обшая стоимость всех товаров
+          </td>
+          <td id="result-table"></td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+    <script src="javascript/jquery.1.4.4.min.js"></script>
+    <!-- <script src="javascript/backbone.1.3.3.min.js"></script> -->
+    <script src="main.js"></script>
+  </body>
+</html>
